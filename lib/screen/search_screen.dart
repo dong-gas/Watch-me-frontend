@@ -27,7 +27,7 @@ Future<List<Movie>> get_search_list_from_backend({
       'disney_selected': disneySelected,
     };
 
-    final Uri apiUrl = Uri.parse('http://3.25.85.3:8000/search_page/'); // 기본 URL
+    final Uri apiUrl = Uri.parse('http://13.210.229.165:8000/search_page/'); // 기본 URL
 
     final response = await http.post(
       apiUrl,

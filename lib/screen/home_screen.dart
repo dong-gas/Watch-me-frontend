@@ -29,7 +29,7 @@ Future<List<Movie>> get_ranking_movies_list_from_backend({
       'disney_selected': disneySelected,
     };
 
-    final Uri apiUrl = Uri.parse('http://3.25.85.3:8000/main_page_integrated/'); // 기본 URL
+    final Uri apiUrl = Uri.parse('http://13.210.229.165:8000/main_page_integrated/'); // 기본 URL
 
     final response = await http.post(
       apiUrl,
@@ -95,7 +95,7 @@ Future<List<Movie>> get_recommended_movies_list_from_backend({
       'disney_selected': disneySelected,
     };
 
-    final Uri apiUrl = Uri.parse('http://3.25.85.3:8000/main_page_personal_recommendation/'); // 기본 URL
+    final Uri apiUrl = Uri.parse('http://13.210.229.165:8000/main_page_personal_recommendation/'); // 기본 URL
 
     final response = await http.post(
       apiUrl,
@@ -161,7 +161,7 @@ Future<List<Movie>> get_movies_list_from_backend({
       'disney_selected': disneySelected,
     };
 
-    final Uri apiUrl = Uri.parse('http://3.25.85.3:8000/main_page_genre/'); // 기본 URL
+    final Uri apiUrl = Uri.parse('http://13.210.229.165:8000/main_page_genre/'); // 기본 URL
 
     final response = await http.post(
       apiUrl,
@@ -388,11 +388,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           RankingSliderVertical(movies: rankingMovies, sliderTitle: '통합 순위!'),
           CircleSlider (movies: recommendedMovies, sliderTitle: '당신만을 위한 추천!'),
-          BoxSlider(movies: hororMovies, sliderTitle: hororGenre),
+          BoxSlider(movies: fantasyMovies, sliderTitle: fantasyGenre),
           BoxSlider(movies: romanceMovies, sliderTitle: romanceGenre),
           BoxSlider(movies: actionMovies, sliderTitle: actionGenre),
-          BoxSlider(movies: fantasyMovies, sliderTitle: fantasyGenre),
           BoxSlider(movies: comedyMovies, sliderTitle: comedyGenre),
+          BoxSlider(movies: hororMovies, sliderTitle: hororGenre),
         ],
       ),
     );

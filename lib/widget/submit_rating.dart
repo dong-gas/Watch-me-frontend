@@ -18,7 +18,7 @@ Future<void> submitRating({
     };
 
     // 서버의 평가 제출 API URL (예시)
-    final Uri apiUrl = Uri.parse('http://3.25.85.3:8000/submit_rating/'); // 평가 전송 URL
+    final Uri apiUrl = Uri.parse('http://13.210.229.165:8000/submit_rating/'); // 평가 전송 URL
 
     // POST 요청
     final response = await http.post(
